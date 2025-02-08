@@ -27,7 +27,8 @@ public class TestSubsystem extends SubsystemBase {
 
     public void testEncoder() {
         //testMotor.setPosition(1);
-        testEncoder.setAbsPosition(1);
+        //testEncoder.setAbsPosition(1);
+        testEncoder.setPosition(0.5);
     }
 
 }
