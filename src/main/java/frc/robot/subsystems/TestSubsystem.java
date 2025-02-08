@@ -22,7 +22,7 @@ public class TestSubsystem extends SubsystemBase {
     }
 
     public void testStop() {
-        testMotor.set(0);
+        testMotor.stopMotor();
     }
 
     public void testEncoder() {
