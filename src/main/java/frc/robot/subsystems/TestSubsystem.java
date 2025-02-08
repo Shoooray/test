@@ -19,14 +19,10 @@ public class TestSubsystem extends SubsystemBase {
 
     public void testSpeed() {
         testMotor.set(1);
-
-        if (testEncoder.getAbsPosition() == 0.5) {
-            testMotor.set(0);
-        }
     }
 
-    public void intakePivot() {
-        
+    public void testStop() {
+        testMotor.set(0);
     }
 
     public void testEncoder() {
