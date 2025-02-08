@@ -57,6 +57,7 @@ public class RobotContainer {
     m_driverController.b().whileTrue(m_exampleSubsystem.exampleMethodCommand());
 
     m_driverController.leftBumper().whileTrue(Commands.runOnce(testSubsystem::testSpeed));
+    m_driverController.rightBumper().whileTrue(Commands.runOnce(testSubsystem::testEncoder));
 
   }
 
