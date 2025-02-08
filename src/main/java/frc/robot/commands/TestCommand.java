@@ -29,7 +29,7 @@ public class TestCommand extends Command {
 
     @Override
     public boolean isFinished() {
-        if (testEncoder.getPosition() == 3) {
+        if (testEncoder.getAbsPosition() > 0.4 && testEncoder.getAbsPosition() < 0.6) {
             return true;
         }
         return false;

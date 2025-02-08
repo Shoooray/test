@@ -58,7 +58,7 @@ public class RobotContainer {
     // cancelling on release.
     m_driverController.b().whileTrue(m_exampleSubsystem.exampleMethodCommand());
 
-    m_driverController.leftBumper().whileTrue(testCommand);
+    m_driverController.leftBumper().onTrue(testCommand);
     
 
   }

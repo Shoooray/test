@@ -19,6 +19,9 @@ public final class Constants {
 
   public class testMotor {
     public static final int TEST_MOTOR_ID = 23;
+    public static final int TEST_MOTOR_2_ID = 25;
+
     public static final int TEST_ENCODER_ID = 12;
+    public static final int TEST_ENCODER_2_ID = 13;
   }
 }

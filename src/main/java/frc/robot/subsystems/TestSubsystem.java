@@ -11,6 +11,7 @@ import frc.robot.Constants;
 public class TestSubsystem extends SubsystemBase {
     
     private TalonFX testMotor = new TalonFX(Constants.testMotor.TEST_MOTOR_ID);
+    private TalonFX testMotor2 = new TalonFX(Constants.testMotor.TEST_MOTOR_2_ID);
     private Canandmag testEncoder = new Canandmag(Constants.testMotor.TEST_ENCODER_ID);
 
     public TestSubsystem() {
@@ -19,10 +20,12 @@ public class TestSubsystem extends SubsystemBase {
 
     public void testSpeed() {
         testMotor.set(1);
+        testMotor2.set(1);
     }
 
     public void testStop() {
         testMotor.stopMotor();
+        testMotor2.stopMotor();
     }
 
     public void testEncoder() {
